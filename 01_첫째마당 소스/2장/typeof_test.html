@@ -5,10 +5,43 @@
 <title>데이터 타입</title>
 <script>
 	var num = 100;
-	var str = "자바스크립트"; 
+	var str = "자바스크립트"; //str=문자
 
+    document.write(typeof num, "<br>"); //number
+    document.write(typeof str); // string
 </script>
+    <style>
+        XMP {
+            padding: 20px;
+            background: #3c3c3c;
+            color: #FFFFFF;
+        }
+
+        .memo{
+            padding: 16px;
+            margin-top: 30px;
+            background: #FFFFE7FF;
+            white-space: break-spaces;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
+    <XMP>
+        var num = 100; //100은 넘버니까 num으로 저장됨
+        var str = "자바스크립트"; //str=문자 "자바스크립트"는 문자니까 string으로 표시됨
+
+        document.write(typeof num, "<br>"); //number
+        document.write(typeof str); // string
+    </XMP>
+
+    <div class="memo">
+        null & undefined 데이터
+
+        var s; underfined --> 변수 s에 값이 등록되기 전의 값
+        var t=hello; t는 hello
+        t = null t는 hello 라는 값을 비우고자 사용
+    </div>
+    <div class="memo">typeof ---> 지정한 데이터 또는 변수에 저장된 자료형을 알고 싶을 때 사용</div>
 </body>
 </html>

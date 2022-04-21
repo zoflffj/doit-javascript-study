@@ -4,9 +4,58 @@
 <meta charset="UTF-8">
 <title>논리형 데이터</title>
 <script>
+    var a = true;
+    var b = false;
+    var c = 10 > 5; // 10은 5보다 크니까 true
+    var d = Boolean(null); //false ---> 이유가 뭐지?
+/*
+불린(boolean)은 논리적인 데이터 유형이다. 불린은 참(true) 혹은 거짓(false) 값만을 가질 수 있다.
+자바스크립트에서 불린 조건은 어떤 코드 부문이 실행되어야 할 지(예를 들어 if 절 안에서)
+또는 어떤 코드 부문을 반복해야 할지(예를 들어 for 문 안에서) 결정하는 데 쓰인다.
+*/
+
+    document.write(a, "<br>");
+    document.write(b, "<br>");
+    document.write(c, "<br>");
+    document.write(d, "<br>");
 
 </script>
+    <style>
+        body main div {
+            margin-top: 30px;
+            background: #f7f7f7;
+            font-size: 24px;
+        }
+        body main div p {
+            margin: 0;
+        }
+        body main div span {
+            font-size: 18px;
+        }
+        .script{
+
+        }
+        .memo{
+            background: #FFFFE7FF;
+            white-space: break-spaces;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
+<main>
+    <div class="script">
+        <p>var a = true; <span>참</span></p>
+        <p>var b = false; <span>거짓</span></p>
+        <p>var c = 10 > 5; <span>10은 5보다 크니까 true</span></p>
+        <p>var d = Boolean(null); <span>false ---> 숫자 0과 null, undefined, 빈문자 ("")를 제외한 모든 데이터에 true 근데 null 들어가서 false</span></p>
+    </div>
+
+    <div class="memo">
+        불린(boolean)은 논리적인 데이터 유형이다. 불린은 참(true) 혹은 거짓(false) 값만을 가질 수 있다.
+        자바스크립트에서 불린 조건은 어떤 코드 부문이 실행되어야 할 지(예를 들어 if 절 안에서)
+        또는 어떤 코드 부문을 반복해야 할지(예를 들어 for 문 안에서) 결정하는 데 쓰인다.
+    </div>
+</main>
 </body>
 </html>
