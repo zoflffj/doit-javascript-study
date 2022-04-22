@@ -4,14 +4,75 @@
 	<meta charset="UTF-8">
 	<title> 논리연산자 </title>
 <script>
-	var a = 10, 
-					b= 20, 
-					c = 0, 
-					d = "hello";
+	var a=10;
+	var b=20;
+	var m=30;
+	var n=40;
+
 	var result;
 
+	result = a > b || b >= m || m > n; // 10 > 20 or 20 >= 30 or 30 > 40 false / false / false
+	document.write(result, "<br>"); //false
+
+	result = a > b || b >= m || m <= n; // 10 > 20 or 20 >= 30 or 30 <= 40 false / false / true
+	document.write(result, "<br>"); //true
+
+	result=  a <= b && b >= m && m <= n; // 10 <= 20 and 20 >= 30 and 30 <= 40 true/ false / true
+	document.write(result, "<br>"); //true
+
+	result= a <=b && b <= m && m <= n; // true && true && true
+	document.write(result,"<br>"); // true
+
+	result= !(a > b);  // !false를 계산 즉, (a는 b보다 크다) !아니다!
+	document.write(result,"<br>"); // true
 </script>
+	<style>
+		XMP {
+			padding: 20px;
+			background: #3c3c3c;
+			color: #FFFFFF;
+		}
+
+		.memo{
+			padding: 16px;
+			margin-top: 30px;
+			background: #FFFFE7FF;
+			white-space: break-spaces;
+			font-size: 20px;
+		}
+	</style>
 </head>
 <body>
+<XMP>
+	var a=10;
+	var b=20;
+	var m=30;
+	var n=40;
+
+	var result;
+
+	result = a > b || b >= m || m > n; // 10 > 20 or 20 >= 30 or 30 > 40 false / false / false
+	document.write(result, "<br>"); //false
+
+	result = a > b || b >= m || m <= n; // 10 > 20 or 20 >= 30 or 30 <= 40 false / false / true
+	document.write(result, "<br>"); //true
+
+	result=  a <= b && b >= m && m <= n; // 10 <= 20 and 20 >= 30 and 30 <= 40 true/ false / true
+	document.write(result, "<br>"); //true
+
+	result= a <=b && b <= m && m <= n; // true && true && true
+	document.write(result,"<br>"); // true
+
+	result= !(a > b);  // !false를 계산 즉, (a는 b보다 크다) !아니다!
+	document.write(result,"<br>"); // true
+</XMP>
+
+<div class="memo">
+	|| : or 연산자라 부르며, 피연산자 중 값이 하나라도 true가 존재하면 true
+
+	&& : and 연산자라 부르며, 피연산자 중 값이 하나라도 false가 존재하면 false
+
+	! : not 연산자라 부르며, 단항 연산자. 피연산자 값이 true이면 반대로 false로 결괏값을 반환
+</div>
 </body>
 </html>
