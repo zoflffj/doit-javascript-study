@@ -10,8 +10,62 @@
 		var f = "20";
 		var result;
 
+		result = a > b;
+		document.write(result, "<br>"); // a(10) > b(20) = false
+		result = a < b;
+		document.write(result, "<br>");
+		result = a <= b;
+		document.write(result, "<br>");
+		result = b == f;
+		document.write(result, "<br>"); // b(20) == f("20") = false 자료형과 상관없이 숫자로만 비교됨
+		result = a != b;
+		document.write(result, "<br>"); // a(10) != b(20) = false 데이터가 다름
+		result = b === f;
+		document.write(result, "<br>"); // b(20) == f("20") = false 숫자는 같지만 자료형이 다름
 	</script>
+	<style>
+		XMP {
+			padding: 20px;
+			background: #3c3c3c;
+			color: #FFFFFF;
+		}
+
+		.memo{
+			padding: 16px;
+			margin-top: 30px;
+			background: #FFFFE7FF;
+			white-space: break-spaces;
+			font-size: 20px;
+		}
+	</style>
 </head>
 <body>
+<XMP>
+	var a = 10;
+	var b = 20;
+	var c = 10;
+	var f = "20";
+	var result;
+
+	result = a > b;
+	document.write(result, "<br>"); // a(10) > b(20) = false
+	result = a < b;
+	document.write(result, "<br>");
+	result = a <= b;
+	document.write(result, "<br>");
+	result = b == f;
+	document.write(result, "<br>"); // b(20) == f("20") = false 자료형과 상관없이 숫자로만 비교됨
+	result = a != b;
+	document.write(result, "<br>"); // a(10) != b(20) = false 데이터가 다름
+	result = b === f;
+	document.write(result, "<br>"); // b(20) === f("20") = false 숫자는 같지만 자료형이 다름
+</XMP>
+<div class="memo">
+	A >= B A가 B보다 크거나 같다.
+	A <= B A가 B보다 크거나 작다.
+	A == B A와 B는 같다.
+	A === B A와 B는 같다. ( === 가 3개면 더욱 엄격하게!! 값을 처리함) https://steemit.com/kr-dev/@cheonmr/js-operator
+	A !== B A와 B는 다르다.
+</div>
 </body>
 </html>

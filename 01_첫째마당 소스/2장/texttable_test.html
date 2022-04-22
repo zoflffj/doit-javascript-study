@@ -4,9 +4,32 @@
 <meta charset="UTF-8">
 <title> 복합대입 연산자-테이블 만들기 </title>
 <script>
-
+    var str = "<table border='1'>";
+    str += "<tr>";
+    str += "<td>1</td><td>2</td><td>3</td>";
+    str += "<tr>";
+    str += "</<table>";
+    document.write(str);
 </script>
+    <style>
+        XMP {
+            padding: 20px;
+            background: #3c3c3c;
+            color: #FFFFFF;
+        }
+    </style>
 </head>
 <body>
+<XMP>
+
+    //하나로 결합됨.
+
+    var str = "<table border='1'>";
+    str += "<tr>"; // str로 작성 시 태그로 인식
+        str += "<td>1</td><td>2</td><td>3</td>"; //문자1문자2문자3
+        str += "<tr>";
+        str += "</<table>";
+        document.write(str);
+</XMP>
 </body>
 </html>
