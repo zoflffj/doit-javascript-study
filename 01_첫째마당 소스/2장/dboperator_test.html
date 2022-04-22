@@ -6,9 +6,60 @@
 	<script>
 		var num1 = 10;
 		var num2 = 3;
-	 
+
+		num1 += num2; //num1 = num(10) + num(3);
+		document.write(num1, "<br>"); //13
+
+		num1 -= num2; //num1 = num(13) - num(3);
+		document.write(num1, "<br>"); //10
+
+		num1 *= num2; //num1 = num(10) * num(3);
+		document.write(num1, "<br>"); //30
+
+		num1 %= num2; //num1 = num(30) % num(3);
+		document.write(num1, "<br>"); //0
 	</script>
+	<style>
+		XMP {
+			padding: 20px;
+			background: #3c3c3c;
+			color: #FFFFFF;
+		}
+
+		.memo{
+			padding: 16px;
+			margin-top: 30px;
+			background: #FFFFE7FF;
+			white-space: break-spaces;
+			font-size: 20px;
+		}
+	</style>
 </head>
 <body>
+<XMP>
+	var num1 = 10;
+	var num2 = 3;
+
+	num1 += num2; //num1 = num(10) + num(3);
+	document.write(num1, "<br>"); //13
+
+	num1 -= num2; //num1 = num(13) - num(3);
+	document.write(num1, "<br>"); //10
+
+	num1 *= num2; //num1 = num(10) * num(3);
+	document.write(num1, "<br>"); //30
+
+	num1 %= num2; //num1 = num(30) % num(3);
+	document.write(num1, "<br>"); //0
+</XMP>
+<div class="memo">
+	맨 위 계산된 값에서 부터 계산해서 내려옴
+
+
+	대입연산자
+
+	대입연산자(=)는 연산된 데이터를 변수에 저장할 때 사용합니다.
+	복합 대입 연산자 (+=, -=, *=, /=, %=)는 산술 연산자와 대입 연산자가 복합적으로 적용된 것을 말합니다.
+</div>
 </body>
 </html>
